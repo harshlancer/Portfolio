@@ -1,0 +1,299 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  color: #F1F1F1;
+  font-family: 'Roboto', sans-serif;
+  margin-top:60px;
+}
+
+.main-section{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./Components/Assets/bg.png');
+  background-size: auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.intro{
+  width: 50%;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto&display=swap');
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.color{
+  color: #FFC5D9;
+  font-family: 'Aboreto', cursive;
+
+}
+
+/* Set default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+a{
+  text-decoration: none;
+}
+
+/* Style the navbar */
+nav {
+  transform: rotate(180);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  background: linear-gradient(to bottom, #413A4D, #2F152B);
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+  /* margin-right: 150px; */
+}
+
+nav ul {
+  
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+  margin: 5px 30px;
+  padding: 0;
+}
+
+nav li {
+  margin: 5px 30px;
+  padding:10px;
+}
+nav li:hover {
+  border: 1px solid #FFC5D9;
+  border-radius: 10px;
+}
+
+nav a {
+  font-size: large;
+  color: #F1F1F1;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #FFC5D9;
+  
+}
+
+
+
+/* Style the main content area */
+main {
+  padding: 2rem;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #FFC5D9;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.card{
+  width: 300px;
+  height: 500px;
+  background-color: #282c34;
+  color: white;
+  margin: 10px;
+  border-radius: 5px ;
+
+}
+.project-list{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.card-image{
+  margin-top: 5px;
+  width: 250px;
+  height: 300px;
+  border-radius: 3px;
+}
+/* About Page CSS */
+.about {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* Contact Page CSS */
+.contact {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.contact a {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact a:hover {
+  color: #f00; /* Change the hover color as per your preference */
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-color: #6A5ACD;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.logo-wrapper{
+  display: flex;
+  width: 30%;
+  height: 100px;
+  background: #F1F1F1;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+.logo-wrapper:hover{
+  background-color: #FFC5D9;
+  opacity: 0.8;
+}
+
+.logo{
+  width:50px;
+  margin :30px;
+}
+
+.logo:hover {
+  border-radius: 30px;
+  border: 2px solid #FFC5D9;
+  animation: bounce 0.5s;
+  
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.about-section{
+  height: 100vh;
+  margin-top: 80px;
+  background-image: url("./Components/Assets/projectsBg.png");
+}
+.contacts{
+  margin-top: 200px;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./Components/Assets/bg.png");
+}
