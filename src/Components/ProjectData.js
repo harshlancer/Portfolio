@@ -4,7 +4,7 @@ import picThree from "./Assets/BookReco.png";
 const projectData = [
   {
     id: 1,
-    title: "Stock P%L calculator",
+    title: "Stock P&L calculator",
     description: "Basic project made with javascript only",
     image: picOne,
     link: "https://63a49ff3dcd00703eedfa709--dreamy-muffin-036baa.netlify.app/",
@@ -19,6 +19,13 @@ const projectData = [
   },
   {
     id: 3,
+    title: "Book Recomendations",
+    description:
+      "In this special project i have used a local database to give book recomendation to the user as per preferance",
+    image: picThree,
+    link: "https://63cd30ee4ca6a41b1ac8ea3f--mellow-haupia-1e6f85.netlify.app/",
+  },{
+    id: 4,
     title: "Book Recomendations",
     description:
       "In this special project i have used a local database to give book recomendation to the user as per preferance",

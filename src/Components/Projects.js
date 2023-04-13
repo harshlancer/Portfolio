@@ -4,7 +4,7 @@ import projectData from "./ProjectData";
 
 function Projects() {
   return (
-    <div className="project-list" style={{ marginTop: 150 }}>
+    <div className="project-list">
       {projectData.map((project) => (
         <ProjectCard
           key={project.id}

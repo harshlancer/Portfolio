@@ -6,10 +6,12 @@ function ProjectCard(props) {
   return (
     <motion.div className="card" whileHover={{ scale: 1.05 }}>
       <img src={image} alt={title} className="card-image" />
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <a href={link} target="_blank" rel="noreferrer">
-        View Project
+      <h3 className="project-title"> {title}</h3>
+      <p className="project-discription" style={{ textAlign: "left" }}>
+        {description}
+      </p>
+      <a className="view" href={link} target="_blank" rel="noreferrer">
+        <p style={{ fontWeight: 500 ,fontSize: 23, color:"voilet"}}>View Project</p>
       </a>
 
       {/* <button onClick={console.log("hello")}>View Project</button> */}

@@ -7,7 +7,8 @@ body {
 .App {
   text-align: center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+
   color: #F1F1F1;
   font-family: 'Roboto', sans-serif;
   margin-top:60px;
@@ -15,7 +16,8 @@ body {
 
 .main-section{
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+
   background-image: url('./Components/Assets/bg.png');
   background-size: auto;
   background-position: center center;
@@ -55,6 +57,7 @@ nav {
   transform: rotate(180);
   height: 50px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: right;
   background: linear-gradient(to bottom, #413A4D, #2F152B);
@@ -150,12 +153,26 @@ main {
 .project-list{
   
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 100vw;
+  min-height: 100vh;
+  background-image: url("./Components/Assets/project-real.png");
+  
+  
 }
+.project-title{
+  text-align: left;
+  margin: 10px;
+}
+
+.project-discription{
+  margin:10px;
+}
+
 .card-image{
-  margin-top: 5px;
+  margin-top: 15px;
   width: 250px;
   height: 300px;
   border-radius: 3px;
@@ -184,31 +201,31 @@ main {
 }
 
 /* Contact Page CSS */
-.contact {
-  padding: 50px 0;
+.find-me-text{
+  font-size: 2rem;
   text-align: center;
 }
-
-.contact h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+.contacts {
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.logo-wrapper-about{
+  background-color: #a7b2c9;
+  margin: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
 }
 
-.contact p {
-  font-size: 20px;
-  line-height: 1.5;
-  margin-bottom: 30px;
-}
 
-.contact a {
-  display: block;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
 
-.contact a:hover {
-  color: #f00; /* Change the hover color as per your preference */
-}
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -285,7 +302,7 @@ main {
 }
 
 .about-section{
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 80px;
   background-image: url("./Components/Assets/projectsBg.png");
 }
@@ -294,6 +311,6 @@ main {
   width: 100vw;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("./Components/Assets/bg.png");
 }

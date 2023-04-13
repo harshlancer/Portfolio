@@ -5,23 +5,18 @@ import linkedIn from "./Assets/linkedin.png";
 import twitter from "./Assets/twitter.png";
 function Contact() {
   return (
-    <div className="contacts">
+    <div className="contacts" style={{ marginTop: 80 }}>
       <motion.footer
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h3
-          style={{
-            fontSize: "large",
-            marginTop: 50,
-            paddingLeft: 50,
-            textAlign: "left",
-          }}
+        <h3 
+          className="find-me-text"
         >
           Find me on
         </h3>
-        <div className="logo-wrapper">
+        <div className="logo-wrapper-about">
           <a href="https://github.com/harshlancer">
             <img className="logo" src={github} />
           </a>
