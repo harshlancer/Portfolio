@@ -24,13 +24,6 @@ const projectData = [
       "In this special project i have used a local database to give book recomendation to the user as per preferance",
     image: picThree,
     link: "https://63cd30ee4ca6a41b1ac8ea3f--mellow-haupia-1e6f85.netlify.app/",
-  },{
-    id: 4,
-    title: "Book Recomendations",
-    description:
-      "In this special project i have used a local database to give book recomendation to the user as per preferance",
-    image: picThree,
-    link: "https://63cd30ee4ca6a41b1ac8ea3f--mellow-haupia-1e6f85.netlify.app/",
   },
 ];
 
