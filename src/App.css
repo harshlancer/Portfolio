@@ -1,4 +1,4 @@
-body {
+*{
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -53,13 +53,56 @@ a{
 }
 
 /* Style the navbar */
+/* Style the navbar for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
 nav {
-  transform: rotate(180);
-  height: 50px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0;
+}
+
+nav button {
+background: none;
+border: none;
+color: white;
+font-size: large;
+font-weight: 600;
+padding: 1rem;
+cursor: pointer;
+}
+
+nav ul {
+display: none;
+flex-direction: column;
+gap: 1rem;
+margin: 0;
+padding: 0;
+}
+
+nav.open ul {
+display: flex;
+}
+
+nav li {
+margin: 0;
+padding: 0;
+width: 100%;
+text-align: center;
+}
+
+nav a {
+display: block;
+padding: 1rem;
+color: white;
+}
+}
+nav {
+  min-height: 50px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: right;
+  justify-content: space-between;
   background: linear-gradient(to bottom, #413A4D, #2F152B);
   color: white;
   font-size: large;
@@ -71,12 +114,11 @@ nav {
   width: 100%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   opacity: 0.8;
-  /* margin-right: 150px; */
-}
+  }
 
 nav ul {
   
-  display: flex;
+  display: inline-block;
   gap: 5rem;
   list-style: none;
   margin: 5px 30px;
@@ -84,6 +126,7 @@ nav ul {
 }
 
 nav li {
+  display: inline-block;
   margin: 5px 30px;
   padding:10px;
 }
@@ -93,6 +136,8 @@ nav li:hover {
 }
 
 nav a {
+
+  text-transform: uppercase;
   font-size: large;
   color: #F1F1F1;
   text-decoration: none;
@@ -262,17 +307,20 @@ main {
   font-size: 20px;
   margin-bottom: 10px;
 }
+
 .logo-wrapper{
   display: flex;
-  width: 30%;
   height: 100px;
+  min-width:300px;
+  max-width: 30%;
   background: #F1F1F1;
-  justify-content: center;
-  align-items: center;
   opacity: 0.5;
-  margin-left: 50px;
-  margin-bottom: 20px;
   border-radius: 20px;
+  margin: 50px;
+  display: flex;
+  flex-wrap:nowrap;
+  align-items: center;
+  justify-content: center;
 }
 .logo-wrapper:hover{
   background-color: #FFC5D9;
@@ -313,4 +361,4 @@ main {
   justify-content: center;
   min-height: 100vh;
   background-image: url("./Components/Assets/bg.png");
-}
+} 
