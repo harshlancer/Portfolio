@@ -321,6 +321,7 @@ main {
   flex-wrap:nowrap;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .logo-wrapper:hover{
   background-color: #FFC5D9;
