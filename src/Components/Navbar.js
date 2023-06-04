@@ -1,27 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import "./Navbar.css";
 function Navbar() {
+  const [menu, setMenu] = useState(true);
+  const handleClick = () => {
+    setMenu(!menu);
+  };
   return (
     <motion.nav
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
+      className="Navbar"
     >
       <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/projects">Projects</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
+        {menu ? (
+          <div className="large">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/projects">Projects</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li className="small">
+              <span class="material-symbols-outlined" onClick={handleClick}>
+                menu
+              </span>
+            </li>
+          </div>
+        ) : (
+          <li className="menu">
+            <span class="material-symbols-outlined" onClick={handleClick}>
+              menu
+            </span>
+          </li>
+        )}
       </ul>
     </motion.nav>
   );

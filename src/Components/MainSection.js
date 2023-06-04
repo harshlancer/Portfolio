@@ -7,6 +7,7 @@ import Header from "./Header";
 import About from "./About";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import "./Minsection.css";
 function MainSection() {
   return (
     <section className="main-section">
