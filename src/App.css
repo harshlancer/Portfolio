@@ -1,13 +1,18 @@
 *{
-  margin: 0;
-  padding:0;
-}
-
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
 
+.App {
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+
+  color: #F1F1F1;
+  font-family: 'Roboto', sans-serif;
+  margin-top:60px;
+}
 .App {
   text-align: center;
   width: 100vw;
@@ -371,4 +376,3 @@ main {
   min-height: 100vh;
   background-image: url("./Components/Assets/bg.png");
 } 
-
