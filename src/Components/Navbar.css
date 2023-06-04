@@ -1,0 +1,64 @@
+/* Reset default list styles */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Style the navbar */
+  nav{
+
+      position: sticky;
+      top:0;
+      z-index: 100;
+      display: flex;    
+      justify-content: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.5s ;
+    animation: bounce 0.5s;
+  }
+
+  
+  
+  nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  @media (min-width:400px){
+    .menu{
+      display: none;
+    }
+    .small{
+      display: none;
+    } 
+  }
+  @media (max-width:400px){
+    .menu{
+      display: block;
+      float:left;
+    }
+    nav ul li {
+      display: flex;
+      flex-direction: column-reverse ;
+    }
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }

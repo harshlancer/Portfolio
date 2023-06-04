@@ -10,6 +10,7 @@ function Type() {
           "React",
           "NextJs",
           "Open Source Contributor",
+          "MERN Stack",
         ],
         autoStart: true,
         loop: true,

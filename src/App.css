@@ -1,4 +1,9 @@
 *{
+<<<<<<< HEAD
+  margin: 0;
+  padding:0;
+}
+=======
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -367,3 +372,4 @@ main {
   min-height: 100vh;
   background-image: url("./Components/Assets/bg.png");
 } 
+>>>>>>> origin/main

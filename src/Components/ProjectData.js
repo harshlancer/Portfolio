@@ -25,6 +25,7 @@ const projectData = [
     image: picThree,
     link: "https://63cd30ee4ca6a41b1ac8ea3f--mellow-haupia-1e6f85.netlify.app/",
   },
+
 ];
 
 export default projectData;

@@ -1,0 +1,36 @@
+
+.project-list{
+    display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+.project-title{
+    text-align: left;
+    margin: 10px;
+  }
+  
+  .project-discription{
+    margin:10px;
+  }
+  
+  .card-image{
+    margin-top: 15px;
+    width: 250px;
+    height: 300px;
+    border-radius: 3px;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    background-color: #282c34;
+    color: white;
+    margin: 10px;
+    border-radius: 5px ;
+  
+  }
