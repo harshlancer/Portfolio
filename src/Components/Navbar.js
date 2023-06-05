@@ -26,9 +26,7 @@ function Navbar() {
             <li>
               <Link to="/about">About</Link>
             </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
+
             <li className="small">
               <span class="material-symbols-outlined" onClick={handleClick}>
                 menu
@@ -42,16 +40,6 @@ function Navbar() {
             </span>
           </li>
         )}
-
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/projects">Projects</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
       </ul>
     </motion.nav>
   );

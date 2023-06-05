@@ -1,0 +1,32 @@
+.headerintro{
+    font-size: 1.5rem;
+}   
+
+.para{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    overflow: hidden;
+    word-spacing: 5px;
+    line-height: 50px;
+}
+.projectPointer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 10px;
+  background: palegoldenrod;
+
+}
+
+.projectPointer:hover{
+    animation: trans 0.5s;
+    background-color: plum;
+    cursor: pointer;
+}

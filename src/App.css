@@ -1,4 +1,6 @@
 *{
+  margin: 0;
+  padding:0;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -8,8 +10,6 @@
   text-align: center;
   width: 100vw;
   min-height: 100vh;
-
-  color: #F1F1F1;
   font-family: 'Roboto', sans-serif;
   margin-top:60px;
 }
@@ -23,18 +23,7 @@
   margin-top:60px;
 }
 
-.main-section{
-  width: 100vw;
-  min-height: 100vh;
 
-  background-image: url('./Components/Assets/bg.png');
-  background-size: auto;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.intro{
-  width: 50%;
-}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
