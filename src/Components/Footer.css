@@ -1,75 +1,95 @@
-/* Footer.css */
+  /* Footer.css */
 
-footer {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h3 {
-    color:#000;
-    font-size: 1.5rem;
-    padding-left: 50px;
-    text-align: left;
-  }
-  
-  .logo-wrapper{
-    color: #000;
-    display: flex;
-    width: 35%;
-    height: 15vh;
-    background: #383CC1;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    display: none;
-  }
- 
-  @media (max-width:1100px){
-    .logo-wrapper{
-      background:#fff;
+  footer {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
     }
-  }
-
-  @media (max-width:500px){
-    .logo-wrapper{
-      display: inline-block;
-      background-color: #fff;
-    }
-  }
-  @media(min-width:500px){
-    .logo-wrapper{
-      display: flex;
-
-    }
-  }
-
-  .logo-wrapper:hover{
-    background-color: #FFC5D9;
-    opacity: 0.8;
-  }
-  
-  .logo{
-    width:50px;
-    margin :30px;
-  }
-  
-  .logo:hover {
-    border-radius: 30px;
-    border: 2px solid #FFC5D9;
-    animation: bounce 0.5s;
     
-  }
-  
-  @keyframes bounce {
-    0%,
-    100% {
-      transform: scale(1);
+    h3 {
+      color:#000;
+      font-size: 1.5rem;
+      padding-left: 50px;
+      text-align: left;
     }
-    50% {
-      transform: scale(1.2);
+    
+    .logo-wrapper{
+      color: #000;
+      display: flex;
+      width: 35%;
+      height: 15vh;
+      background: #383CC1;
+      justify-content: center;
+      align-items: center;
+      margin-left: 50px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      display: none;
     }
-  }
   
+    @media (max-width:1100px){
+      .logo-wrapper{
+        background:#fff;
+      }
+      .logoText{
+        display: none;
+      }
+    }
+
+    @media (max-width:500px){
+      .logoText{
+        display: none;
+      }
+      .logo-wrapper{
+        display: flex;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      
+      }
+      .logo{
+        margin: 0;
+
+      }
+      
+      
+      
+    }
+    @media(min-width:500px){
+      .logo-wrapper{
+        display: flex;
+        width: 30vw;
+        flex-wrap: no-wrap;
+        overflow: hidden;
+      }
+
+    }
+
+    .logo-wrapper:hover{
+      background-color: #FFC5D9;
+      opacity: 0.8;
+    }
+    
+    .logo{
+      width:50px;
+      margin :30px;
+    }
+    
+    .logo:hover {
+      border-radius: 30px;
+      border: 2px solid #FFC5D9;
+      animation: bounce 0.5s;
+      
+    }
+    
+    @keyframes bounce {
+      0%,
+      100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+    

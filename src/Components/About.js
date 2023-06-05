@@ -55,7 +55,7 @@ function About() {
         </div>
       </div>
     </section>
-    <div class="bio">
+    <div className="bio">
       <p>
         I am always looking to expand my knowledge and stay up-to-date with
         the latest industry trends. I am a natural problem-solver and pay

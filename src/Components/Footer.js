@@ -7,13 +7,14 @@ import { motion } from "framer-motion";
 
 function Footer() {
   return (
-    <motion.footer className="footer"
+    <motion.footer
+      className="footer"
       initial={{ y: 100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
       <div className="logo-wrapper">
-        <h3>Find me on</h3>
+        <h3 className="logoText">Find me on</h3>
         <a href="https://github.com/harshlancer">
           <img className="logo" src={github} />
         </a>
@@ -24,6 +25,7 @@ function Footer() {
         <a href="https://twitter.com/HarshRanjanDwi3">
           <img className="logo" src={twitter} />
         </a>
+        
       </div>
     </motion.footer>
   );
