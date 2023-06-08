@@ -8,7 +8,6 @@ import About from "./About";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import "./Minsection.css";
-import Mid from "./Mid";
 
 function MainSection() {
   return (
@@ -22,7 +21,6 @@ function MainSection() {
         <br></br>
         <br></br>
         <br></br>
-  
 
         <Footer />
       </motion.main>
