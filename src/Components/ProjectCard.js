@@ -11,7 +11,13 @@ function ProjectCard(props) {
         {description}
       </p>
       <a className="view" href={link} target="_blank" rel="noreferrer">
-        <p style={{ fontWeight: 500, fontSize: 23, color: "voilet" }}>
+        <p
+          style={{
+            fontWeight: 500,
+            fontSize: 23,
+            color: "voilet",
+          }}
+        >
           View Project
         </p>
       </a>

@@ -6,14 +6,14 @@ import "./Mid.css";
 function Mid() {
   const ref = useRef(null);
 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const handleClick = () => {
     navigate("/projects");
   };
 
   return (
     <AnimatePresence>
-      <div>
+      <div className="midIntro">
         <div className="headerintro">
           <h1>
             Hii ,My name is <span className="color"> Harsh Ranjan Dwivedi</span>
@@ -53,11 +53,13 @@ function Mid() {
             style={{ display: "flex" }}
             onClick={handleClick}
           >
+            {/* <button> */}
             Projects{" "}
             <img
               className="pointerImg"
               src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODViODYwODQ5MjU4OWZhOTI1YWQ5MjY4NjQ0ZjY1MDI5OTcwZmNmYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/K8M2BMcGyiA9E9hmEl/giphy.gif"
             ></img>
+            {/* </button> */}
           </div>
         </div>
       </div>

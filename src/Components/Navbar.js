@@ -34,11 +34,11 @@ function Navbar() {
             </li>
           </div>
         ) : (
-          <li className="menu">
+          <span className="menu">
             <span class="material-symbols-outlined" onClick={handleClick}>
               menu
             </span>
-          </li>
+          </span>
         )}
       </ul>
     </motion.nav>
