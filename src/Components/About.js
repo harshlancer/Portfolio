@@ -6,7 +6,7 @@ import node from "./Assets/node-js.svg";
 import pwa from "./Assets/pwa.png";
 import native from "./Assets/native-apps-icon.png";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-
+import "./About.css"
 function About() {
   
 
