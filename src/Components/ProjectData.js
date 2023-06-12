@@ -1,6 +1,7 @@
 import picOne from "./Assets/StockP&L.png";
 import picTwo from "./Assets/GuessGame.png";
 import picThree from "./Assets/BookReco.png";
+import picFour from "./Assets/Screenshot 2023-06-08 230716.png";
 const projectData = [
   {
     id: 1,
@@ -25,7 +26,13 @@ const projectData = [
     image: picThree,
     link: "https://63cd30ee4ca6a41b1ac8ea3f--mellow-haupia-1e6f85.netlify.app/",
   },
-
+  {
+    id: 4,
+    title: "Endless Runner Game",
+    description: "This is the start of my game development journey",
+    image: picFour,
+    link: "https://stately-pavlova-562c4e.netlify.app/",
+  },
 ];
 
 export default projectData;

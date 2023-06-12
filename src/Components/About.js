@@ -6,70 +6,78 @@ import node from "./Assets/node-js.svg";
 import pwa from "./Assets/pwa.png";
 import native from "./Assets/native-apps-icon.png";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import "./About.css";
 
 function About() {
-  
-
   return (
-  <div className="about-section">
-    <div className="about-text">
-      <h3 className="intro" style={{ padding: 50, textAlign: "left" }}>
-        {" "}
-        As a third-year undergraduate student, I am extremely passionate about
-        technology. Over the past few years, I have learned and mastered
-        various technologies such as ReactJS, JavaScript, NextJS, NodeJS, and
-        many more. These skills have enabled me to develop and design
-        websites, build progressive web apps (PWAs), and create native apps.{" "}
-      </h3>
-    </div>
-
-    <section id="skills">
-      <h2 className="color" style={{ fontWeight: 600 }}>
-        Skills
-      </h2>
-      <div className="skills">
-        <div className="skill-card">
-          <img src={reactLogo} alt="React" />
-          <h3 className="color">ReactJS</h3>
+    <Parallax pages={3}>
+      <ParallaxLayer speed={1} offset={0} style={{ overflow: "hidden" }}>
+        <div className="about-section" style={{ overflow: "hidden" }}>
+          <div className="about-text">
+            <h3 className="intro-about">
+              As a third-year undergraduate student, I am extremely passionate
+              about technology. Over the past few years, I have learned and
+              mastered various technologies such as ReactJS, JavaScript, NextJS,
+              NodeJS, and many more. These skills have enabled me to develop and
+              design websites, build progressive web apps (PWAs), and create
+              native apps.
+            </h3>
+          </div>
         </div>
-        <div className="skill-card">
-          <img src={javascript} alt="JavaScript" />
-          <h3 className="color">JavaScript</h3>
+      </ParallaxLayer>
+      <ParallaxLayer
+        speed={0.5}
+        offset={1}
+        factor={1.5}
+        style={{ overflow: "hidden" }}
+      >
+        <section id="skills">
+          <h2 className="color">Skills</h2>
+          <div className="icon">
+            <div className="skill-card">
+              <img src={reactLogo} alt="React" />
+              <h3 className="color">ReactJS</h3>
+            </div>
+            <div className="skill-card">
+              <img src={javascript} alt="JavaScript" />
+              <h3 className="color">JavaScript</h3>
+            </div>
+            <div className="skill-card">
+              <img src={next} alt="NextJS" />
+              <h3 className="color">NextJS</h3>
+            </div>
+            <div className="skill-card">
+              <img src={node} alt="NodeJS" />
+              <h3 className="color">NodeJS</h3>
+            </div>
+            <div className="skill-card">
+              <img src={pwa} alt="PWA development" />
+              <h3 className="color">PWA development</h3>
+            </div>
+            <div className="skill-card">
+              <img src={native} alt="Native app development" />
+              <h3 className="color">Native app development</h3>
+            </div>
+          </div>
+        </section>
+      </ParallaxLayer>
+      <ParallaxLayer speed={1} sticky={{ start: 1.2, end: 3 }}>
+        <div className="bio">
+          <p>
+            I am always looking to expand my knowledge and stay up-to-date with
+            the latest industry trends. I am a natural problem-solver and pay
+            close attention to detail, which allows me to excel in the
+            ever-evolving landscape of technology.
+          </p>
+          <p>
+            Overall, I am extremely driven and dedicated to the field of
+            technology, and I believe that my skills and expertise make me a
+            valuable asset to any team or project I am a part of. I am excited
+            to continue learning and growing in my career as a tech enthusiast.
+          </p>
         </div>
-        <div className="skill-card">
-          <img src={next} alt="NextJS" />
-          <h3 className="color">NextJS</h3>
-        </div>
-        <div className="skill-card">
-          <img src={node} alt="NodeJS" />
-          <h3 className="color">NodeJS</h3>
-        </div>
-
-        <div className="skill-card">
-          <img src={pwa} />
-          <h3 className="color">PWA development</h3>
-        </div>
-        <div className="skill-card">
-          <img src={native} alt="Native app development" />
-          <h3 className="color">Native app development</h3>
-        </div>
-      </div>
-    </section>
-    <div className="bio">
-      <p>
-        I am always looking to expand my knowledge and stay up-to-date with
-        the latest industry trends. I am a natural problem-solver and pay
-        close attention to detail, which allows me to excel in the
-        ever-evolving landscape of technology.
-      </p>
-      <p>
-        Overall, I am extremely driven and dedicated to the field of
-        technology, and I believe that my skills and expertise make me a
-        valuable asset to any team or project I am a part of. I am excited to
-        continue learning and growing in my career as a tech enthusiast.
-      </p>
-    </div>
-  </div>
+      </ParallaxLayer>
+    </Parallax>
   );
 }
 

@@ -9,16 +9,19 @@
 }
 .project-title{
     text-align: left;
-    color: white;
+    color: coral;
     overflow: hidden;
     margin: 10px;
+    z-index: 10000;
   }
   
-  .project-description {
+  .project-discription {
     display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
     margin: 10px;
     padding: 10px;
-    overflow: auto;
   }
   
   .project-description::-webkit-scrollbar {
