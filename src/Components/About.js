@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import javascript from "./Assets/javascript.png";
 import reactLogo from "./Assets/react-logo.svg";
 import next from "./Assets/next-js.svg";
@@ -8,9 +8,15 @@ import native from "./Assets/native-apps-icon.png";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { motion } from "framer-motion";
 
+
 import "./About.css";
 
 function About() {
+   const handleClick = () => {
+    parallax.scrollTo(scrollRef.current.offsetTop);
+  };
+
+  
   return (
     <Parallax pages={3} >
       <ParallaxLayer speed={1} offset={0} style={{ overflow: "hidden" }}>
@@ -24,6 +30,18 @@ function About() {
               design websites, build progressive web apps (PWAs), and create
               native apps.
             </h3>
+          </div>
+<div
+            className="pointer"
+            style={{ display: "flex" }}
+            onClick={handleClick}
+            ref={scrollRef}
+          >
+            Scroll{" "}
+            <img
+              className="pointerImg"
+              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODViODYwODQ5MjU4OWZhOTI1YWQ5MjY4NjQ0ZjY1MDI5OTcwZmNmYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/K8M2BMcGyiA9E9hmEl/giphy.gif"
+            ></img>
           </div>
         </div>
       </ParallaxLayer>
