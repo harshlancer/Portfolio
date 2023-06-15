@@ -12,7 +12,7 @@ import "./About.css";
 
 function About() {
   return (
-    <Parallax pages={3} >
+    <Parallax pages={3}>
       <ParallaxLayer speed={1} offset={0} style={{ overflow: "hidden" }}>
         <div className="about-section" style={{ overflow: "hidden" }}>
           <div className="about-text">
@@ -57,7 +57,7 @@ function About() {
             </div>
             <div className="card">
               <img src={native} alt="Native app development" />
-              <h3 className="color">Native app development</h3>
+              <h3>Native app development</h3>
             </div>
           </div>
         </div>
