@@ -1,3 +1,5 @@
-.main-section{
+.main-section {
     width: 100%;
-}   
+    background-image: url("./Assets/bg1.png");
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to change opacity */
+}

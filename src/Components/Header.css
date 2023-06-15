@@ -4,6 +4,7 @@
     /* font-family: 'Aboreto', cursive;
 font-family: 'Righteous', cursive;
 font-family: 'Roboto', sans-serif; */
+
 .intro {
     font-size: 3rem;
     padding: 50px;
@@ -11,7 +12,17 @@ font-family: 'Roboto', sans-serif; */
     width: 50%;
     word-spacing: 1rem;
     font-family: Righteous;
+    color: black;
   }
+  .headerIntroText {
+    font-size: 3rem;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 236, 236, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
+  }
+  
+
 @media (max-width:400px){
   .left{
     margin:0;

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import javascript from "./Assets/javascript.png";
 import reactLogo from "./Assets/react-logo.svg";
 import next from "./Assets/next-js.svg";
@@ -6,9 +6,17 @@ import node from "./Assets/node-js.svg";
 import pwa from "./Assets/pwa.png";
 import native from "./Assets/native-apps-icon.png";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { motion } from "framer-motion";
+
+
 import "./About.css";
 
 function About() {
+   const handleClick = () => {
+    parallax.scrollTo(scrollRef.current.offsetTop);
+  };
+
+  
   return (
     <Parallax pages={3}>
       <ParallaxLayer speed={1} offset={0} style={{ overflow: "hidden" }}>
@@ -23,43 +31,54 @@ function About() {
               native apps.
             </h3>
           </div>
+<div
+            className="pointer"
+            style={{ display: "flex" }}
+            onClick={handleClick}
+            ref={scrollRef}
+          >
+            Scroll{" "}
+            <img
+              className="pointerImg"
+              src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODViODYwODQ5MjU4OWZhOTI1YWQ5MjY4NjQ0ZjY1MDI5OTcwZmNmYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/K8M2BMcGyiA9E9hmEl/giphy.gif"
+            ></img>
+          </div>
         </div>
       </ParallaxLayer>
       <ParallaxLayer
         speed={0.5}
         offset={1}
-        factor={1.5}
+        factor={3}
         style={{ overflow: "hidden" }}
       >
-        <section id="skills">
-          <h2 className="color">Skills</h2>
-          <div className="icon">
-            <div className="skill-card">
-              <img src={reactLogo} alt="React" />
-              <h3 className="color">ReactJS</h3>
+        <div className="skills">
+          <div className="skills-cards">
+            <div className="card">
+              <img src={reactLogo} alt="React"></img>
+              <h3>ReactJs</h3>
             </div>
-            <div className="skill-card">
-              <img src={javascript} alt="JavaScript" />
-              <h3 className="color">JavaScript</h3>
+            <div className="card">
+              <img src={javascript} alt="javascript"></img>
+              <h3>JavaScript</h3>
             </div>
-            <div className="skill-card">
-              <img src={next} alt="NextJS" />
-              <h3 className="color">NextJS</h3>
+            <div className="card">
+              <img src={next} alt="next"></img>
+              <h3>NextJS</h3>
             </div>
-            <div className="skill-card">
-              <img src={node} alt="NodeJS" />
-              <h3 className="color">NodeJS</h3>
+            <div className="card">
+              <img src={node} alt="node"></img>
+              <h3>NodeJS</h3>
             </div>
-            <div className="skill-card">
-              <img src={pwa} alt="PWA development" />
-              <h3 className="color">PWA development</h3>
+            <div className="card">
+              <img src={pwa} alt="pwa"></img>
+              <h3>Progressive Web Apps</h3>
             </div>
-            <div className="skill-card">
+            <div className="card">
               <img src={native} alt="Native app development" />
-              <h3 className="color">Native app development</h3>
+              <h3>Native app development</h3>
             </div>
           </div>
-        </section>
+        </div>
       </ParallaxLayer>
       <ParallaxLayer speed={1} sticky={{ start: 1.2, end: 3 }}>
         <div className="bio">

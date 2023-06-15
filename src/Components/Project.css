@@ -47,7 +47,7 @@
     height: 300px;
     border-radius: 3px;
   }
-  .card{
+  .cards{
     display: flex;
     flex-direction: column;
     overflow: hidden;

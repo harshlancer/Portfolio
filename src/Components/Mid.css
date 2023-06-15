@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Righteous&family=Roboto&display=swap');
+
 .midIntro{
     display: flex;
     flex-direction: column;
@@ -27,14 +29,17 @@
     transition: transform 330ms ease-in-out;
 }
 .projectPointer{
+    font-size: 3rem;
+    font-family: Righteous;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 20vw;
-  padding: 20px;
-  border-radius: 30px;
-  margin-top: 10px;
-  background: palegoldenrod;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+    background: palegoldenrod;
+
 
 }
 
