@@ -12,9 +12,7 @@ import { motion } from "framer-motion";
 import "./About.css";
 
 function About() {
-   const handleClick = () => {
-    parallax.scrollTo(scrollRef.current.offsetTop);
-  };
+   
 
   
   return (
@@ -34,8 +32,6 @@ function About() {
 <div
             className="pointer"
             style={{ display: "flex" }}
-            onClick={handleClick}
-            ref={scrollRef}
           >
             Scroll{" "}
             <img
