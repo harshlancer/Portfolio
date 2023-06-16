@@ -40,7 +40,6 @@
     margin-top: 10px;
     background: palegoldenrod;
 
-
 }
 
 .projectPointer:hover{
@@ -56,6 +55,9 @@
         font-size: 1.2rem;
         line-height: 30px;
         word-spacing: 2.5px;
-
+    }
+    .projectPointer{
+        font-size: 1.5rem;
+        
     }
 }

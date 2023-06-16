@@ -21,6 +21,10 @@ font-family: 'Roboto', sans-serif; */
     background-color: rgba(255, 236, 236, 0.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
   }
+  .pointer h1{
+    margin-left: 30px;
+    font-size: 3rem;
+  }
   
 
 @media (max-width:400px){
@@ -28,10 +32,30 @@ font-family: 'Roboto', sans-serif; */
     margin:0;
     text-align: left;
   }
-  .intro{
+ 
+
+  .pointer h1{
     font-size: 1rem;
-    width: 30vw;
+    margin: auto ;
+  }
+
+  .pointerImg{
+    display: none;
+    margin: 0;
+  }
+
+  .intro{
+    width: 40vw;
     text-align: left;
+    margin: 0;
+  }
+  .headerIntroText{
+    padding: 4px;
+    margin: 0;
+    font-size: 1rem;
+    word-spacing: normal;
+    font-weight: 100;
+    overflow-wrap:break-word;
   }
   .right{
     margin:0px;
@@ -61,7 +85,7 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .pointer{
-  width: 30vw;
+  width: 25vw;
   padding: 20px;
   border-radius: 30px;
   margin-top: 10px;

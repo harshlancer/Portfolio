@@ -19,11 +19,10 @@ function Header() {
       <div className="header">
         <div className="left">
           <div className="intro">
-
-          <h1 className="headerIntroText">
-            Let me introduce a tech-savvy undergraduate with expertise in Web
-            Development, <span className="color">App Development</span> Web
-            Designing and <span className="color"> UI UX Development.</span>
+            <h1 className="headerIntroText">
+              Let me introduce a tech-savvy undergraduate with expertise in Web
+              Development, <span className="color">App Development</span> Web
+              Designing and <span className="color"> UI UX Development.</span>
             </h1>
             <br />
             <br />
@@ -32,12 +31,12 @@ function Header() {
               className="pointer"
               style={{ display: "flex" }}
               onClick={handleClick}
-              >
-              Intro{" "}
+            >
+              <h1>Intro </h1>
               <img
                 className="pointerImg"
                 src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODViODYwODQ5MjU4OWZhOTI1YWQ5MjY4NjQ0ZjY1MDI5OTcwZmNmYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PXM/K8M2BMcGyiA9E9hmEl/giphy.gif"
-                ></img>
+              ></img>
             </div>
           </div>
           <br />
