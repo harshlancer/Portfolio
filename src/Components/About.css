@@ -4,108 +4,97 @@
   align-items: center;
   justify-content: center;
   background-image: url("./Assets/bg2.png");
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to change opacity */
-
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-  
-  .about-text {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .intro-about {
-    font-size: 24px;
-    line-height: 1.5;
-    margin-bottom: 40px;
-  }
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-about {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("./Assets/bg3.png");
+}
+
+.skills-cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90vw;
+  margin-right: 30px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: cornsilk;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 200px;
+  max-height: 200px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card:hover {
+  animation: bounce 0.5s;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
   .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    margin-right: 30px;
-    text-align: center;
-    background-image: url("./Assets/bg3.png");
-  }
-  
-  .skills-cards {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 40vw;
-    margin-right: 30px;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color:cornsilk;
-    margin:20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    width: 200px;
-    max-height: 200px;
-    text-align: center;
-    overflow: hidden;
-
-  }
-  .card:hover{
-    animation: bounce 0.5s;
-    cursor: pointer;
-  }
-  .card img {
-    width: 100px;
-    height: 100px;
-    object-fit:contain;
-    border-radius: 50%;
+    flex-direction: row;
+    position: fixed;
     margin-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
   }
-  
-  .card h3 {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    margin: auto;
-  }
-  
-  
-  
-  @keyframes bounce {
-    0%,
-    100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-  }
- 
-  
-  
-  .bio {
-    float: left;
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: left;
-    background-image: url("./Assets/bg3.png");
 
+  .skills-cards {
+    max-width: none;
+    margin-right: 0;
   }
-  
-  .bio p {
-    margin-bottom: 20px;
-    font-size: 1.3rem;
-    font-weight: 600;
-    display: flex;
-    margin-left: 20px;
-   
+  .card{
+    width: 100px;
   }
-  
+}

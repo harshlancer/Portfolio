@@ -1,65 +1,98 @@
-
-.project-list{
-    display: flex;
+.project-list {
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
 }
-.project-title{
-    text-align: left;
-    color: coral;
-    overflow: hidden;
-    margin: 10px;
-    z-index: 10000;
+
+.project-para {
+  margin: 10px;
+}
+
+.project-title {
+  text-align: left;
+  color: coral;
+  overflow: hidden;
+  margin: 10px;
+  z-index: 10000;
+}
+
+.project-description {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.scroll-top-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+  background-color: #2980b9;
+}
+
+.project-description::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.project-description::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+}
+
+.project-description::-webkit-scrollbar-thumb {
+  background-color: red; /* Color of the scrollbar */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  width: 300px;
+  height: 500px;
+  background-color: #282c34;
+  color: white;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.card-image {
+  margin-top: 15px;
+  width: 200px;
+  height: 300px;
+  border-radius: 3px;
+}
+
+.view {
+  overflow: hidden;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .cards {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
-  
-  .project-discription {
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
+
+  .card-image {
+    width: 100%;
+    height: auto;
   }
-  
-  .project-description::-webkit-scrollbar {
-    width: 10px; /* Width of the scrollbar */
-  }
-  
-  .project-description::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color of the track */
-  }
-  
-  .project-description::-webkit-scrollbar-thumb {
-    background-color: red; /* Color of the scrollbar */
-    border-radius: 10px; /* Rounded corners */
-  }
-  
- /* Track */
- 
-/* Handle */
-  
-  .card-image{
-    margin-top: 15px;
-    width: 250px;
-    height: 300px;
-    border-radius: 3px;
-  }
-  .cards{
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    align-items: center;
-    width: 300px;
-    height: 500px;
-    background-color: #282c34;
-    color: white;
-    margin: 10px;
-    border-radius: 5px ;
-  
-  }
-  .view{
-    overflow: hidden;
-  }
+}

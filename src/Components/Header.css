@@ -1,90 +1,93 @@
-/* Header.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Righteous&family=Roboto&display=swap');
-    /* font-family: 'Aboreto', cursive;
-font-family: 'Righteous', cursive;
-font-family: 'Roboto', sans-serif; */
 
 .intro {
-    font-size: 3rem;
-    padding: 50px;
-    text-align: left;
-    width: 50%;
-    word-spacing: 1rem;
-    font-family: Righteous;
-    color: black;
-  }
-  .headerIntroText {
-    font-size: 3rem;
-    padding: 30px;
-    border-radius: 20px;
-    background-color: rgba(255, 236, 236, 0.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust the values as needed */
-  }
-  .pointer h1{
-    margin-left: 30px;
-    font-size: 3rem;
-  }
-  
+  font-size: 3rem;
+  padding: 50px;
+  text-align: left;
+  width: 50%;
+  word-spacing: 1rem;
+  font-family: Righteous;
+  color: black;
+}
 
-@media (max-width:400px){
-  .left{
-    margin:0;
-    text-align: left;
-  }
- 
+.headerIntroText {
+  font-size: 3rem;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 236, 236, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
-  .pointer h1{
+.pointer h1 {
+  font-size: 3rem;
+  margin-left: 30px;
+}
+
+@media (max-width: 400px) {
+  .left {
+    margin: 0;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pointer h1 {
     font-size: 1rem;
-    margin: auto ;
+    margin: auto;
   }
 
-  .pointerImg{
+  .pointerImg {
     display: none;
     margin: 0;
   }
 
-  .intro{
+  .intro {
     width: 40vw;
     text-align: left;
     margin: 0;
   }
-  .headerIntroText{
+
+  .headerIntroText {
     padding: 4px;
     margin: 0;
     font-size: 1rem;
     word-spacing: normal;
     font-weight: 100;
-    overflow-wrap:break-word;
+    overflow-wrap: break-word;
   }
-  .right{
-    margin:0px;
+
+  .right {
+    margin: auto;
   }
-  .right>img{
+
+  .right > img {
     width: 200px;
     position: static;
   }
-  .movingText{
+
+  .movingText {
     display: flex;
     text-align: left;
   }
-  h1{
+
+  h1 {
     font-size: small;
   }
 }
-  
-  .color {
-    color: purple;
-  }
-.left{
-    display: flex;
+
+.color {
+  color: purple;
 }
 
-.right{
-    font-size: 1.5rem;
+.left {
+  display: flex;
 }
 
-.pointer{
+.right {
+  font-size: 1.5rem;
+}
+
+.pointer {
   width: 25vw;
   padding: 20px;
   border-radius: 30px;
@@ -93,16 +96,14 @@ font-family: 'Roboto', sans-serif; */
   background: palegoldenrod;
 }
 
-
-.pointer:hover{
+.pointer:hover {
   animation: trans 0.5s;
   background-color: plum;
   cursor: pointer;
-
 }
-.pointer:hover>.pointerImg{
-  transform: rotate(90deg) ;
 
+.pointer:hover > .pointerImg {
+  transform: rotate(90deg);
 }
 
 @keyframes trans {
@@ -115,8 +116,8 @@ font-family: 'Roboto', sans-serif; */
   }
 }
 
-.pointerImg{
-  transition: transform 1s ;
+.pointerImg {
+  transition: transform 1s;
   width: 100px;
   margin-left: 30px;
 }
