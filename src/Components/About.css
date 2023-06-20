@@ -30,11 +30,17 @@
   justify-content: center;
   text-align: center;
   background-image: url("./Assets/bg3.png");
+  width: 50%;
+  float: right;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 50px;
 }
 
 .skills-cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  float: right;
   max-width: 90vw;
   margin-right: 30px;
   justify-content: center;
@@ -77,13 +83,18 @@
   margin: auto;
 }
 
+.bio{
+  width: 30%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 50px;
+}
+
 @media (max-width: 768px) {
   .skills {
     flex-direction: row;
-    position: fixed;
     margin-bottom: 10px;
-    bottom: 0;
-    left: 0;
+    
     width: 100%;
     padding: 20px;
     justify-content: space-around;
