@@ -1,28 +1,56 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import projectData from "./ProjectData";
-import { motion } from "framer-motion";
 
 import "./Project.css";
+
 function Projects() {
+  const { scrollY } = useViewportScroll();
+  const opacity = useTransform(scrollY, [0, 200], [0, 1]);
+  const translateY = useTransform(scrollY, [0, 200], [100, 0]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on component mount
+  }, []);
+
   return (
-    <motion.div
-      initial={{ x: 5000 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div>
+      <motion.div
+        initial={{ opacity: 0, translateY: 100 }}
+        animate={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h1 className="section-title">Projects</h1>
+      </motion.div>
+
       <div className="project-list">
         {projectData.map((project) => (
-          <ProjectCard
+          <motion.div
             key={project.id}
-            title={project.title}
-            description={project.description}
-            image={project.image}
-            link={project.link}
-          />
+            initial={{ opacity: 0, translateY: 100 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <ProjectCard
+              title={project.title}
+              description={project.description}
+              image={project.image}
+              link={project.link}
+            />
+          </motion.div>
         ))}
       </div>
-    </motion.div>
+
+      <button className="scroll-top-btn" onClick={() => window.scrollTo(0, 0)}>
+        Scroll to Top
+      </button>
+
+      <motion.div
+        className="scroll-indicator"
+        style={{ opacity, translateY }}
+      />
+    </div>
   );
 }
 

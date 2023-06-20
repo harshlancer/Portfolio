@@ -29,7 +29,7 @@ function Navbar() {
 
             <li className="small">
               <span class="material-symbols-outlined" onClick={handleClick}>
-                menu
+                X
               </span>
             </li>
           </div>

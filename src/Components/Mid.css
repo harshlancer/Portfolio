@@ -51,6 +51,10 @@
     .headerintro{
         font-size: 1.5rem;
     }
+    .headerintro h1{
+        font-size: 1.8rem;
+        text-align: center;
+    }
     .para{
         font-size: 1.2rem;
         line-height: 30px;
