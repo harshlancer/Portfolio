@@ -18,7 +18,11 @@
   margin: 10px;
   z-index: 10000;
 }
-
+.section-title{
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+}
 .project-description {
   display: flex;
   align-items: center;
